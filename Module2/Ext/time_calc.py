@@ -6,7 +6,7 @@ num2 = input('Number 2: ')
 
 start = time.time()
 
-time_to_sleep = int(num1)/int(num2)
+time_to_sleep = int(num1)+int(num2)
 time.sleep(time_to_sleep)
 end = time.time()
 
