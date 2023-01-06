@@ -1,0 +1,5 @@
+Welcome to MenuScan(TM)
+1. Scan a network
+2. Scan a device for open ports
+3. Save results to CSV file
+4. Exit

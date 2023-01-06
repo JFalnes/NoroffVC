@@ -23,8 +23,6 @@ def decrypt(key):
 def encrypt(key):
     message = input('Message to encrypt: ')
 
-    key = b'_q0pPC5WeVCE5o8cC_oxm8WTyyvYV1YNJnKqRHjyuxA='
-
     fernet = Fernet(key)
 
     enc_message = fernet.encrypt(message.encode())
