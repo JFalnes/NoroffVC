@@ -25,21 +25,21 @@ def syn_scan(target, ports):
     sport = RandShort()
     for port in ports:
         pkt = sr1(IP(dst=target)/TCP(sport=sport, dport=port, flags='S'), timeout=1, verbose=0)
-    if pkt != None:
-        if pkt.haslayer(TCP):
-            if pkt[TCP].flags == 20:
-                print_ports(port, 'Closed')
-            elif pkt[TCP].flags == 18:
-                print(port, 'Open')
+        if pkt != None:
+            if pkt.haslayer(TCP):
+                if pkt[TCP].flags == 20:
+                    print_ports(port, 'Closed')
+                elif pkt[TCP].flags == 18:
+                    print_ports(port, 'Open')
+                else:
+                    print_ports(port, 'TCP Packet response/filtered')
+            elif pkt.haslayer(ICMP):
+                print_ports(port, 'ICMP resp / filtered')
             else:
-                print_ports(port, 'TCP Packet response/filtered')
-        elif pkt.haslayer(ICMP):
-            print_ports(port, 'ICMP resp / filtered')
+                print_ports(port, 'Unknown response')
+                print(pkt.summary)
         else:
-            print_ports(port, 'Unknown response')
-            print(pkt.summary)
-    else:
-        print_ports(port, 'Unanswered')
+            print_ports(port, 'Unanswered')
 
 
 result = arp_scan(ip_to_scan)
