@@ -1,0 +1,21 @@
+['Samsung', 'iPhone', 'OnePlus']Samsung
+iPhone
+OnePlus
+['Samsung', 'iPhone', 'OnePlus', "['Samsung', 'iPhone', 'OnePlus']Samsung\n", 'iPhone\n', 'OnePlus\n']Samsung
+iPhone
+OnePlus
+Samsung
+iPhone
+OnePlus
+Samsung
+iPhone
+OnePlus
+Samsung
+iPhone
+OnePlus
+Samsung
+iPhone
+OnePlus
+Samsung
+iPhone
+OnePlus
