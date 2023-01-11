@@ -7050,3 +7050,10 @@ result.json
 .venv/Scripts/scapy.exe
 .venv/share/man/man1/scapy.1
 Module 6/M6L1/networkscan.py
+Module 6/M6L3/__pycache__/Box.cpython-310.pyc
+Module 6/M6L3/__pycache__/Cube.cpython-310.pyc
+Module 6/M6L3/__pycache__/Rectangle.cpython-310.pyc
+Module 6/M6L3/__pycache__/Shape.cpython-310.pyc
+Module 6/M6L3/__pycache__/Square.cpython-310.pyc
+Module 6/M6L3/__pycache__/ThreeDimensionalShape.cpython-310.pyc
+Module 6/M6L3/__pycache__/TwoDimensionalShape.cpython-310.pyc
