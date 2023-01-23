@@ -1,4 +1,4 @@
-from Square import *
+from Square import * 
 from Rectangle import *
 from Box import *
 from Cube import *
